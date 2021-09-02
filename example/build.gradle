@@ -7,7 +7,7 @@ buildscript {
 
   dependencies {
     classpath 'com.android.tools.build:gradle:3.3.1'
-    classpath 'com.dicedmelon.gradle:jacoco-android:0.1.5-SNAPSHOT'
+    classpath 'com.dicedmelon.gradle:jacoco-android:0.1.6-SNAPSHOT'
   }
 }
 
@@ -55,15 +55,19 @@ android {
   dataBinding {
     enabled = true
   }
+
+  packagingOptions {
+    exclude 'android.support.v4.graphics.drawable.RoundedBitmapDrawable'
+  }
 }
 
 dependencies {
   //noinspection GradleCompatible
-  implementation 'com.android.support:appcompat-v7:23.1.1'
-
+  //implementation 'com.android.support:appcompat-v7:23.4.0'
+  //implementation 'com.android.support:support-v4:23.1.1'
   testImplementation 'org.assertj:assertj-core:1.7.1'
   testImplementation 'junit:junit:4.12'
 
   androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
-  androidTestImplementation 'com.android.support.test:rules:0.5'
+  //androidTestImplementation 'com.android.support.test:rules:0.5'
 }
