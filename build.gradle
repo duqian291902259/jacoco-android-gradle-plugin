@@ -50,7 +50,7 @@ test {
 
 jacocoTestReport {
   reports {
-    html.enabled false
+    html.enabled true
     xml.enabled true
   }
 }

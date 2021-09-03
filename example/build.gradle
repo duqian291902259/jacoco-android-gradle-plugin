@@ -6,7 +6,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.3.1'
+    classpath 'com.android.tools.build:gradle:3.6.4'
     classpath 'com.dicedmelon.gradle:jacoco-android:0.1.6-SNAPSHOT'
   }
 }
@@ -20,13 +20,13 @@ repositories {
 }
 
 android {
-  compileSdkVersion 23
-  buildToolsVersion '23.0.3'
+  compileSdkVersion 29
+  buildToolsVersion '28.0.3'
 
   defaultConfig {
-    minSdkVersion 15
+    minSdkVersion 21
     //noinspection ExpiredTargetSdkVersion
-    targetSdkVersion 23
+    targetSdkVersion 26
     versionCode 1
     versionName '1.0.0'
     testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
@@ -66,8 +66,8 @@ dependencies {
   //implementation 'com.android.support:appcompat-v7:23.4.0'
   //implementation 'com.android.support:support-v4:23.1.1'
   testImplementation 'org.assertj:assertj-core:1.7.1'
-  testImplementation 'junit:junit:4.12'
+  testImplementation 'junit:junit:4.13.1'
 
-  androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
   //androidTestImplementation 'com.android.support.test:rules:0.5'
 }
