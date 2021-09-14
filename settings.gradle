@@ -1,2 +1,5 @@
+include ':BuildSrc'
+include ':example'
+
 rootProject.name = 'jacoco-android'
-enableFeaturePreview('STABLE_PUBLISHING')
+//enableFeaturePreview('STABLE_PUBLISHING')
