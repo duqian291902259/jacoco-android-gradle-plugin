@@ -83,7 +83,7 @@ jacocoAndroidUnitTestReport {
   csv.enabled false
   html.enabled true
   xml.enabled false
-  destination "$projectDir/jacoco/report/"
+  destination "$buildDir/jacoco/report/"
 }
 
 dependencies {
